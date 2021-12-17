@@ -20,3 +20,11 @@ function dataList(){
 var x = document.getElementById("field").value;
 document.getElementById("data").innerHTML = x;
 }
+function radio(){
+var x = document.getElementByName("web");
+for(i = 0; i < x.length; i++){
+if(x[i].checked){
+document.getElementById("course").innerHTML = x[i].value;
+}
+}
+}
