@@ -1,7 +1,14 @@
+body{
+
+background-image: url("web.jpg");
+background-repeat: no-repeat;
+background-position: right top;
+background-attachment: fixed;
+}
 
 .center{
 text-align: center;
-    background-color: black;
+    background-color: #1F2833;
     color: white;
     padding: 15px;
 }
@@ -28,4 +35,14 @@ padding: 10px;
 }
 td:nth-child(even),td:nth-child(odd){
 background-color: #D6EEEE;
+}
+audio{
+width: 100%;
+}
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
 }

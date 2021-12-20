@@ -7,8 +7,18 @@
     <title>Sample</title>
     <link rel="icon" type="image/png" href="/images/favIcon.png">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="/javascript/script.js"></script>
-
+    <script src="javaScript.js"></script>
+    <script src="/js/jQuery.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#ide").click(function(){
+        $("#hide").css('visibility', 'hidden');
+    });
+    $("#show").click(function(){
+        $("#hide").css('visibility', 'visible');
+    });
+});
+    </script>
 </head>
 <body>
     <h1 class="center">Hyper Text Markup Language</h1><br>
@@ -89,7 +99,7 @@ and meaningful word-->
 <!-- block-->
 <!-- its a container it occupies a whole width and starts with a new line -->
     <h3 class="text_center">Block and Inline</h3>
-    <div style="background-color:black;color:white;padding:20px;">
+    <div style="background-color:#1F2833;color:white;padding:20px;">
         <h2 class="text_center">Block</h2>
         <p class="text_center">ts a container it occupies a whole width and starts with a new line</p>
     </div>
@@ -129,12 +139,9 @@ and meaningful word-->
     <hr>
     <h3>Radio Button</h3>
     <form>
-        <input type="radio" id="html" name="web" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="web" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="web" value="JavaScript">
-        <label for="javascript">JavaScript</label><br><br>
+        <input type="radio"  name="web" value="HTML"> HTML
+        <input type="radio" name="web" value="CSS"> CSS
+        <input type="radio" name="web" value="JavaScript"> JavaScript<br><br>
         <button type="button" onclick="radio()">Click</button>
         <p id="course"></p>
     </form><br><br>
@@ -142,13 +149,11 @@ and meaningful word-->
     <hr>
     <h3>CheckBox</h3>
     <form>
-        <input type="checkbox" id="html5" name="html" value="HTML">
-        <label for="html5"> HTML5</label><br>
-        <input type="checkbox" id="css3" name="css" value="CSS">
-        <label for="css3">CSS3</label><br>
-        <input type="checkbox" id="Js" name="js" value="Javascript">
-        <label for="Js"> JavaScript</label><br><br>
-        <input type="submit" value="Submit">
+        <input class="messageCheckbox" type="checkbox"  name="carrier" value="IT">IT
+        <input class="messageCheckbox" type="checkbox" name="carrier" value="Non-IT">Non-IT
+        <input class="messageCheckbox" type="checkbox" name="carrier" value="BPO">BPO<br><br>
+        <button type="button" onclick="checkBox()">Click</button>
+        <p id="check"></p>
     </form><br><br>
 <!--drop down-->
     <hr>
@@ -214,5 +219,42 @@ and meaningful word-->
             <source src="/audio/ringtone.mp3" type="video/mp4">
         </audio>
     </div><br>
+
+    <div class="text_center">
+        <h3>Location</h3>
+        <p id="location"></p>
+        <button type="button" onclick="myLocation()">Click</button>
+    </div><br><br>
+
+
+<!--        <h3>Drag and Drop</h3>-->
+<!--        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>-->
+<!--        <img id="drag1" src="/images/image.png" draggable="true" ondragstart="drag(event)" width="336" height="69">-->
+<!--     <br><br>-->
+
+    <div class="text_center">
+        <h3>LocalStorage</h3>
+        <button type="button" onclick="lStorage()">Click</button>
+        <div id="click"></div>
+    </div>
+
+
+    <div class="text_center">
+        <h3>SessionStorage</h3>
+        <button type="button" onclick="sStorage()">Click</button>
+        <div id="tap"></div>
+    </div>
+<div class="text_center">
+    <h3>WebWorker</h3>
+    <button type="button" onclick="hi()">Click</button><br><br>
+    <button type="button" onclick="webWorker()">Click</button>
+</div>
+
+    <div class="text_center">
+        <p id="hide">This paragraph will be hided when click button clicked </p>
+
+        <button id="ide" type="button">click</button>
+        <button id="show" type="button">click</button>
+    </div>
 </body>
 </html>
